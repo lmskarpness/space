@@ -72,9 +72,9 @@ public class SolarSystemGenerator {
                     new OrbitalData(
                             rand.nextFloat(14,60),
                             rand.nextFloat(0.005f, 0.01f),
-                            rand.nextFloat(30, 50)),
+                            rand.nextFloat(30, 100)),
                     planet);
-            renderers.add(new Renderer(moon, new Texture("src/main/assets/anim_moon80.png"), 80, 12, 0.05f));
+            renderers.add(new Renderer(moon, new Texture("src/main/assets/anim_moon80.png"), 80, 12, 0.04f));
             planet.addMoon(moon);
         }
     }

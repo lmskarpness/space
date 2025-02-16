@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="897a0b25-a6dd-4d6c-88b1-013920820f92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_dryplanet80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_moon80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_redstar50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_redstar64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_redstar80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/anim_wetplanet80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/spr_starbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/star_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/cameras/GameCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/core/SolarSystemGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/main/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/main/Space.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/GameScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/MenuScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/PauseScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalPhysics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/SolarSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/render/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/render/Renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/render/SolarSystemRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/CelestialBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/OrbitalObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Moon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/factories/CelestialBodyFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/factories/MoonFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/factories/PlanetFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/factories/StarFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/MenuScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/MenuScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,5 +122,16 @@
       <updated>1739245791105</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

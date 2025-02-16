@@ -67,15 +67,13 @@ public class MenuScreen implements Screen {
 
         batch.begin();
         batch.draw(animation.getFrame(), centerX - (titleSize.x / 2f), centerY + 50);
-//        batch.draw(animation.getFrame(), 0 - (titleSize.x / 2f), 50);
-
         font.draw(batch, layout, centerX - (layout.width / 2), centerY - (layout.height / 2));
         batch.end();
     }
 
     @Override
-    public void resize(int i, int i1) {
-
+    public void resize(int width, int height) {
+        viewport.update(width, height);
     }
 
     @Override
