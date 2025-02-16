@@ -1,20 +1,28 @@
 package org.space.core;
 
-import org.space.physics.Vec2;
+import org.space.physics.OrbitalData;
+import org.space.physics.OrbitalPhysics;
 
-public class Planet extends CelestialBody {
-    private String planetType;
+public class Planet extends OrbitalObject {
+    private OrbitalPhysics orbitalPhysics;
 
-    public Planet(String name, double mass, double radius, Vec2 position, String planetType) {
-        super(name, mass, radius, position);
-        this.planetType = planetType;
+    public Planet(String name, OrbitalData orbitalData, OrbitalObject parent) {
+        super(name, orbitalData);
+        this.parent = parent;
+        orbitalPhysics = new OrbitalPhysics(parent);
     }
 
-    public String getPlanetType() { return planetType; }
-
-
     @Override
-    public String getType() {
-        return "Planet [" + planetType + "]";
+    public void updatePosition(double dt) {
+        // Update self and orbiting objects
+        orbitalPhysics.updateObjectPosition(dt, orbitalData, this);
+
+        if (orbitingObjects == null) {
+            return;
+        }
+
+        for (OrbitalObject object : orbitingObjects) {
+            object.updatePosition(dt);
+        }
     }
 }

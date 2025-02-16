@@ -1,18 +1,21 @@
 package org.space.core;
 
-import org.space.physics.Vec2;
+import org.space.physics.OrbitalData;
+import org.space.physics.OrbitalPhysics;
 
-public class Moon extends CelestialBody {
+public class Moon extends OrbitalObject {
+    private OrbitalPhysics orbitalPhysics;
 
-    private Planet parentPlanet;
-
-    public Moon(String name, double mass, double radius, Vec2 position, Planet parentPlanet) {
-        super(name, mass, radius, position);
-        this.parentPlanet = parentPlanet;
+    public Moon(String name, OrbitalData orbitalData, OrbitalObject parent) {
+        super(name, orbitalData);
+        this.parent = parent;
+        orbitalPhysics = new OrbitalPhysics(parent);
     }
 
     @Override
-    public String getType() {
-        return "Moon Orbits [" + parentPlanet.getName() + "]";
+    public void updatePosition(double dt) {
+        // Only update self
+        orbitalPhysics.updateObjectPosition(dt, orbitalData, this);
     }
+
 }

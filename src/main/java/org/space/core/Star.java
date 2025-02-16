@@ -1,20 +1,23 @@
 package org.space.core;
 
-import org.space.physics.Vec2;
+import org.space.physics.OrbitalData;
 
-public class Star extends CelestialBody {
+public class Star extends OrbitalObject {
 
-    private String starType;
-
-    public Star(String name, double mass, double radius, Vec2 position, String starType) {
-        super(name, mass, radius, position);
-        this.starType = starType;
+    public Star(String name, OrbitalData orbitalData) {
+        super(name, orbitalData);
     }
 
-    public String getStarType() { return starType; }
-
     @Override
-    public String getType() {
-        return "Star [" + starType + "]";
+    public void updatePosition(double dt) {
+//
+//        if (orbitingObjects == null) {
+//            return;
+//        }
+//
+////        // Only update orbiting objects
+////        for (OrbitalObject object : orbitingObjects) {
+////            object.updatePosition(dt);
+////        }
     }
 }
