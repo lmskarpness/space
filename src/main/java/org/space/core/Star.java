@@ -10,14 +10,5 @@ public class Star extends OrbitalObject {
 
     @Override
     public void updatePosition(double dt) {
-//
-//        if (orbitingObjects == null) {
-//            return;
-//        }
-//
-////        // Only update orbiting objects
-////        for (OrbitalObject object : orbitingObjects) {
-////            object.updatePosition(dt);
-////        }
     }
 }

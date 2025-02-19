@@ -1,5 +1,6 @@
 package org.space.physics;
 
+import com.badlogic.gdx.math.Vector2;
 import org.space.core.OrbitalObject;
 
 import java.util.List;
@@ -9,11 +10,13 @@ public class OrbitalPhysics {
     // convert to map:
     private List<OrbitalObject> orbiters;
     private double meanAnomaly; // Tracks time in orbit
+    private Vec2 pos;
 
     public OrbitalPhysics(OrbitalObject center) {
         this.center = center;
         this.orbiters = center.getOrbitingObjects();
         this.meanAnomaly = 0;
+        pos = new Vec2(0, 0);
     }
 
     // Update the planet's position based on Kepler's laws
@@ -24,7 +27,7 @@ public class OrbitalPhysics {
         meanAnomaly += meanMotion * deltaTime;
 
         // Solve Kepler's equation for eccentric anomaly E
-        double eccentricAnomaly = solveKeplersEquation(meanAnomaly, od.eccentricity());
+        double eccentricAnomaly = solveKeplersEquation(meanAnomaly +  + od.initialAnomaly(), od.eccentricity());
 
         // Compute true anomaly
         double trueAnomaly = 2 * Math.atan2(
@@ -41,7 +44,9 @@ public class OrbitalPhysics {
         double y = r * Math.sin(trueAnomaly);
 
         // Update planet's position
-        orb.setPosition(new Vec2((float) x + center.getPosition().getX(), (float) y + center.getPosition().getY()));
+        pos.setX((float) x + center.getPosition().getX());
+        pos.setY((float) y + center.getPosition().getY());
+        orb.setPosition(pos);
     }
 
     // Solves Kepler's equation numerically using Newton's method

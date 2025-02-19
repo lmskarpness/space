@@ -50,7 +50,6 @@ public class GameCamera extends InputAdapter {
         lastTouch.set(screenX, screenY, 0);
 
         Vector3 worldCoords = camera.unproject(new Vector3(screenX, screenY, 0));
-        System.out.printf("worldCoords: (%f, %f)\n", worldCoords.x, worldCoords.y);
         checkClick(worldCoords.x, worldCoords.y);
         return true;
     }

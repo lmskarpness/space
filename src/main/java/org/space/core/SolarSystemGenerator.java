@@ -3,8 +3,7 @@ package org.space.core;
 import com.badlogic.gdx.graphics.Texture;
 import org.space.physics.OrbitalData;
 import org.space.physics.SolarSystem;
-import org.space.render.Renderer;
-import org.space.render.SolarSystemRenderer;
+import org.space.render.OrbitalRenderer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.Random;
 public class SolarSystemGenerator {
 
     private Random rand;
-    private List<Renderer> renderers;
+    private List<OrbitalRenderer> orbitalRenderers;
     private List<OrbitalObject> bodies;
 
     public SolarSystemGenerator(int seed) {
@@ -25,18 +24,18 @@ public class SolarSystemGenerator {
     }
 
     public SolarSystem generateSystem() {
-        renderers = new ArrayList<>();
+        orbitalRenderers = new ArrayList<>();
         bodies = new ArrayList<>();
 
         Star star = generateStar();
         generatePlanets(star);
 //        SolarSystem ss = new SolarSystem(star, renderers);
-        return new SolarSystem(star, renderers);
+        return new SolarSystem(star, orbitalRenderers);
     }
 
     private Star generateStar() {
         Star star = new Star("Unnamed", new OrbitalData(0,0,0));
-        renderers.add(new Renderer(star, new Texture("src/main/assets/anim_redstar80.png"), 80, 12, 1.75f));
+        orbitalRenderers.add(new OrbitalRenderer(star, new Texture("src/main/assets/anim_redstar80.png"), 80, 12, 1.75f));
         return star;
     }
 
@@ -50,10 +49,10 @@ public class SolarSystemGenerator {
         for (int i = 0; i < numPlanets; i++) {
             float eccentricity = rand.nextFloat(0.01f, 0.3f);
 
-            Planet planet = new Planet("Planet " + i, new OrbitalData(period, eccentricity, sma), star);
+            Planet planet = new Planet("Planet " + i, new OrbitalData(period, eccentricity, sma, rand.nextDouble(0, 2 * Math.PI)), star);
             generateMoons(planet);
 
-            renderers.add(new Renderer(planet, new Texture("src/main/assets/anim_wetplanet80.png"), 80, 12, 0.1f));
+            orbitalRenderers.add(new OrbitalRenderer(planet, new Texture("src/main/assets/anim_wetplanet80.png"), 80, 12, 0.1f));
             bodies.add(planet);
             star.addSatellite(planet);
 
@@ -74,12 +73,12 @@ public class SolarSystemGenerator {
                             rand.nextFloat(0.005f, 0.01f),
                             rand.nextFloat(30, 100)),
                     planet);
-            renderers.add(new Renderer(moon, new Texture("src/main/assets/anim_moon80.png"), 80, 12, 0.04f));
+            orbitalRenderers.add(new OrbitalRenderer(moon, new Texture("src/main/assets/anim_moon80.png"), 80, 12, 0.04f));
             planet.addMoon(moon);
         }
     }
 
-    public List<Renderer> getRenderers() {
-        return renderers;
+    public List<OrbitalRenderer> getRenderers() {
+        return orbitalRenderers;
     }
 }

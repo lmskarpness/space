@@ -23,6 +23,14 @@ public class Vec2 {
         return y;
     }
 
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
     @Override
     public String toString() {
         return "Vec2{" + x + ", " + y +'}';

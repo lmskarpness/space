@@ -12,14 +12,14 @@ public class SolarSystemRenderer {
     }
 
     public void update(float dt) {
-        for (Renderer renderer : solarSystem.getRenderers()) {
-            renderer.update(dt);
+        for (OrbitalRenderer orbitalRenderer : solarSystem.getRenderers()) {
+            orbitalRenderer.update(dt);
         }
     }
 
     public void render(SpriteBatch batch) {
-        for (Renderer renderer : solarSystem.getRenderers()) {
-            renderer.render(batch);
+        for (OrbitalRenderer orbitalRenderer : solarSystem.getRenderers()) {
+            orbitalRenderer.render(batch);
         }
     }
 }

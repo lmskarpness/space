@@ -5,8 +5,230 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="897a0b25-a6dd-4d6c-88b1-013920820f92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1-fonts/default.hiero" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1-fonts/font-small.hiero" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/border-circle-error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/border-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/border-dark-blue.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/border-error.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/border.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-blue-down.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-blue-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-blue.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-down.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-red.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button-window-bg.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/button.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-down-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-on-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-over-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/check-over-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/color-picker-bar-selector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/color-picker-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/color-picker-selector-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/color-picker-selector-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/cursor.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/default-pane-noborder.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/default-pane.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/default-select-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/default-select.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/font-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-drive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-file-audio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-file-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-file-pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-file-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-folder-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-folder-parent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-folder-star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/icon-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/list-selection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/menu-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/pack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/padded-list-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/progressbar-filled-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/progressbar-filled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/progressbar-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/progressbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-down-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-on-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-over-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/radio-over-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/scroll-horizontal.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/scroll-knob-horizontal.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/scroll-knob-vertical.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/scroll.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/select-box-list-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/select-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/select-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/selection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/separator-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider-knob-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider-knob-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider-knob-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider-knob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/slider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/splitpane-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/splitpane-vertical-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/splitpane-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/splitpane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/sub-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/textfield-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/textfield.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/tooltip-bg.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/touchpad-knob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/tree-minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/tree-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/tree-plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/tree-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/vis-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/vis-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/window-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/window-noborder.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/window-resizable.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x1/window.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2-fonts/default.hiero" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2-fonts/font-small.hiero" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/border-circle-error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/border-circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/border-dark-blue.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/border-error.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/border.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-blue-down.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-blue-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-blue.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-down.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-red.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button-window-bg.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/button.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-down-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-on-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-over-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/check-over-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/color-picker-bar-selector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/color-picker-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/color-picker-selector-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/color-picker-selector-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/cursor.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/default-pane-no-border.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/default-pane.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/default-select-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/default-select.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/font-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-drive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-file-audio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-file-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-file-pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-file-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-folder-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-folder-parent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-folder-star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/icon-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/list-selection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/menu-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/pack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/padded-list-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/progressbar-filled-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/progressbar-filled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/progressbar-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/progressbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-down-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-on-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-over-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/radio-over-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/scroll-horizontal.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/scroll-knob-horizontal.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/scroll-knob-vertical.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/scroll.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/select-box-list-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/select-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/select-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/selection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/separator-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider-knob-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider-knob-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider-knob-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider-knob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/slider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/splitpane-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/splitpane-vertical-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/splitpane-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/splitpane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/sub-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/textfield-over.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/textfield.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/tooltip-bg.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/touchpad-knob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/tree-minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/tree-over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/tree-plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/tree-selection.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/vis-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/vis-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/window-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/window-noborder.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/window-resizable.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/raw/x2/window.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1/default.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1/font-small.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1/uiskin.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1/uiskin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1/uiskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x2/default.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x2/font-small.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x2/uiskin.atlas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x2/uiskin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x2/uiskin.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/assets/gui_skins/Commodore_64_UI_Skin/commodore64ui/uiskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/gui_skins/Commodore_64_UI_Skin/commodore64ui/uiskin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/cameras/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/cameras/GameCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/OrbitalObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/OrbitalObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/SolarSystemGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/SolarSystemGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/MenuScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/MenuScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/PauseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/PauseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalPhysics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/OrbitalPhysics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/physics/SolarSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/SolarSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/physics/Vec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/Vec2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/render/OrbitalRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/render/OrbitalRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/render/SolarSystemRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/render/SolarSystemRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +268,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Game.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/skarpness/Developer/Java/space&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Game.executor": "Run",
+    "Application.Launcher.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/skarpness/Developer/Java/space/src/main/assets/gui_skins",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/assets/gui_skins" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/assets" />
       <recent name="$PROJECT_DIR$/src/main/java/org/space/core" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin/x1" />
+      <recent name="$PROJECT_DIR$/src/main/assets/gui_skins/vis/skin" />
+      <recent name="$PROJECT_DIR$/src/main/assets/gui_skins" />
+      <recent name="$PROJECT_DIR$/src/main/assets" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.space.render" />
@@ -133,5 +360,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

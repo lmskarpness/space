@@ -1,7 +1,7 @@
 package org.space.physics;
 
 import org.space.core.OrbitalObject;
-import org.space.render.Renderer;
+import org.space.render.OrbitalRenderer;
 
 import java.util.List;
 
@@ -10,21 +10,21 @@ public class SolarSystem {
     private String name;
     private OrbitalObject star;
     private List<OrbitalObject> objects;
-    private List<Renderer> renderers;
+    private List<OrbitalRenderer> orbitalRenderers;
 
-    public SolarSystem(OrbitalObject star, List<Renderer> renderers) {
+    public SolarSystem(OrbitalObject star, List<OrbitalRenderer> orbitalRenderers) {
         this.star = star;
-        this.renderers = renderers;
+        this.orbitalRenderers = orbitalRenderers;
         this.name = "Unnamed";
     }
 
-    public SolarSystem(OrbitalObject star, List<Renderer> renderers, String name) {
-        this(star, renderers);
+    public SolarSystem(OrbitalObject star, List<OrbitalRenderer> orbitalRenderers, String name) {
+        this(star, orbitalRenderers);
         this.name = name;
     }
 
-    public List<Renderer> getRenderers() {
-        return renderers;
+    public List<OrbitalRenderer> getRenderers() {
+        return orbitalRenderers;
     }
 
     public void setName(String name) {

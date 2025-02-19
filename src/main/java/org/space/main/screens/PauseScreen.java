@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
-import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import org.space.main.Space;
 
@@ -24,7 +24,7 @@ public class PauseScreen implements Screen {
         this.gameScreen = gameScreen;
 
         this.camera = new OrthographicCamera();
-        viewport = new FitViewport(Space.SCREEN_WIDTH, Space.SCREEN_HEIGHT, camera);
+        viewport = new ExtendViewport(Space.SCREEN_WIDTH, Space.SCREEN_HEIGHT, camera);
         camera.update();
 
         font = new BitmapFont();

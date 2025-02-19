@@ -15,7 +15,6 @@ public abstract class OrbitalObject {
     protected OrbitalData orbitalData;
     protected OrbitalObject parent; // For position of orbital origin
     protected List<OrbitalObject> orbitingObjects;
-    private double trueAnomaly; // True anomaly (angle in the orbit)
 
     public OrbitalObject(String name, OrbitalData orbitalData) {
         this(name, orbitalData, 0);
@@ -53,10 +52,6 @@ public abstract class OrbitalObject {
             list.add(child);
             collectOrbitingObjects(child, list); // Recursive call for deeper levels
         }
-    }
-
-    public void setTrueAnomaly(double trueAnomaly) {
-        this.trueAnomaly = trueAnomaly;
     }
 
     public void setParent(OrbitalObject parent) {

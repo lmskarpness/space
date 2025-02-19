@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import org.space.core.OrbitalObject;
 
-public class Renderer {
+public class OrbitalRenderer {
     private Texture texture;
     private Animation animation;
     private OrbitalObject cb;
@@ -12,13 +12,13 @@ public class Renderer {
     private float frameHeight;
     private float scale;
 
-    public Renderer(OrbitalObject cb, Texture texture, int frameCount, float cycleTime, float scale) {
+    public OrbitalRenderer(OrbitalObject cb, Texture texture, int frameCount, float cycleTime, float scale) {
         this(cb, texture, frameCount, cycleTime);
         this.scale = scale;
         cb.setSpriteRadius((Math.min(frameWidth, frameHeight) / 2) * scale);
     }
 
-    public Renderer(OrbitalObject cb, Texture texture, int frameCount, float cycleTime) {
+    public OrbitalRenderer(OrbitalObject cb, Texture texture, int frameCount, float cycleTime) {
         this.cb = cb;
         this.texture = texture;
         animation = new Animation(texture, frameCount, cycleTime);
@@ -26,7 +26,6 @@ public class Renderer {
         frameHeight = (float) texture.getHeight();
         scale = 1;
     }
-
 
     public void update(float deltaTime) {
         animation.update(deltaTime);
