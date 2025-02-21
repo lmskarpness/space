@@ -6,37 +6,36 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import org.space.cameras.GameCamera;
 import org.space.core.OrbitalObject;
 import org.space.main.Space;
-import org.space.physics.SolarSystem;
-
-import java.util.List;
 
 public class GUIRenderer {
     private Stage stage;
     private Table table;
     private Skin skin;
-    SelectBox selectBox;
-    private Batch batch;
-    private SolarSystem solarSystem;
+    private Label name;
+    private Label position;
+    private OrbitalObject object;
 
-    public GUIRenderer(Space space, SolarSystem solarSystem) {
+    public GUIRenderer() {
         Batch batch = new SpriteBatch();
-        this.solarSystem = solarSystem;
+        object = null;
         stage = new Stage(new ExtendViewport(Space.SCREEN_WIDTH, Space.SCREEN_HEIGHT), batch);
         skin = new Skin(Gdx.files.internal("src/main/assets/gui_skins/Commodore_64_UI_Skin/commodore64ui/uiskin.json"));
-        selectBox = new SelectBox<>(skin);
 
         // table for UI layout
         table = new Table(skin);
         table.top().left();
         // UI Elements
-        selectBox.setItems(getStringsForDropdown("[PLANETS]"));
-        selectBox.scaleBy(0.5f);
+        name = new Label("", skin);
+        position = new Label("", skin);
+        table.add(name).pad(10);
+        table.row();
+        table.add(position).pad(10);
 
         table.setPosition(0, stage.getHeight() - table.getHeight());
         table.row();
-        table.add(selectBox).pad(10).growX();
 
         // add table to stage
         stage.addActor(table);
@@ -51,25 +50,30 @@ public class GUIRenderer {
 //        });
     }
 
-    private String[] getStringsForDropdown(String title) {
-        List<OrbitalObject> objs = solarSystem.getStar().getOrbitingObjects(); // del
-        String[] ret = new String[objs.size() + 1];
-        ret[0] = title;
-        for (int i = 0; i < objs.size(); i++) {
-            ret[i + 1] = objs.get(i).getName();
-        }
-        return ret;
-    }
-
 //    // Method to update the resource label
 //    public void updateResources(int amount) {
 //        resourceLabel.setText("Resources: " + amount);
 //    }
 
     public void render() {
+        if (object != null) {
+            position.setText(object.getPosition().toString());
+        }
+
         table.setPosition(0, stage.getHeight() - table.getHeight());
         stage.act(Gdx.graphics.getDeltaTime()); // Update UI
         stage.draw(); // Draw UI on top of the game
+    }
+
+    public void displayInfoHUD(OrbitalObject obj) {
+        name.setText(obj.getName());
+        position.setText(obj.getPosition().toString());
+    }
+
+    public void hideInfoHUD() {
+        object = null;
+        name.setText("");
+        position.setText("");
     }
 
     public void updateViewport(int width, int height) {
@@ -84,6 +88,11 @@ public class GUIRenderer {
     // Handle input separately from game logic
     public Stage getStage() {
         return stage;
+    }
+
+    public void setFocusedObject(OrbitalObject obj) {
+        this.object = obj;
+        displayInfoHUD(object);
     }
 }
 

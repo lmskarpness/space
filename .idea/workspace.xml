@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="897a0b25-a6dd-4d6c-88b1-013920820f92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Satellite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/space/cameras/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/cameras/GameCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Moon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/OrbitalObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/OrbitalObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/SolarSystemGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/SolarSystemGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/core/Star.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/main/screens/PauseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/main/screens/PauseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/space/physics/SolarSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/physics/SolarSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,16 +147,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/space/render/GUIRenderer.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

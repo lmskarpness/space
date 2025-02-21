@@ -4,11 +4,7 @@ import org.space.physics.OrbitalData;
 
 public class Star extends OrbitalObject {
 
-    public Star(String name, OrbitalData orbitalData) {
-        super(name, orbitalData);
-    }
-
-    @Override
-    public void updatePosition(double dt) {
+    public Star(String name, OrbitalData orbitalData, OrbitalObject parent) {
+        super(name, orbitalData, parent);
     }
 }

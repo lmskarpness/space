@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector3;
 import org.space.core.OrbitalObject;
 import org.space.physics.SolarSystem;
+import org.space.render.GUIRenderer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +18,13 @@ public class GameCamera extends InputAdapter {
     private Vector3 lastTouch = new Vector3();
     private List<OrbitalObject> objects;
     private OrbitalObject focusedObject;
+    private GUIRenderer renderer;
 
-    public GameCamera(float viewportWidth, float viewportHeight) {
+    public GameCamera(float viewportWidth, float viewportHeight, GUIRenderer renderer) {
         camera = new OrthographicCamera(viewportWidth, viewportHeight);
         camera.position.set(0, 0, 0);
         camera.update();
+        this.renderer = renderer;
         objects = new ArrayList<>();
         focusedObject = null;
     }
@@ -51,6 +54,7 @@ public class GameCamera extends InputAdapter {
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         focusedObject = null;
+        renderer.hideInfoHUD();
         lastTouch.set(screenX, screenY, 0);
 
         Vector3 worldCoords = camera.unproject(new Vector3(screenX, screenY, 0));
@@ -68,6 +72,8 @@ public class GameCamera extends InputAdapter {
             if (isOrbitalObjectClicked(obj, x, y)) {
                 System.out.println("Clicked on: " + obj.getName());
                 setFocusedObject(obj);
+                renderer.setFocusedObject(focusedObject);
+                updateFocus();
                 break;
             }
         }
@@ -83,13 +89,17 @@ public class GameCamera extends InputAdapter {
     }
 
     private void setFocusedObject(OrbitalObject orb) {
-        camera.zoom = (float) (0.01f * orb.getSpriteRadius());
+        camera.zoom = (float) (0.008f * orb.getSpriteRadius()); // Initial zoom
         camera.position.set(orb.getPosition().getX(), orb.getPosition().getY(), 0);
         focusedObject = orb;
     }
 
+    // Control events during focus mode
     public void updateFocus() {
-        if (focusedObject != null) camera.position.set(focusedObject.getPosition().getX(), focusedObject.getPosition().getY(), 0);
+        if (focusedObject != null) {
+            camera.position.set(focusedObject.getPosition().getX(), focusedObject.getPosition().getY(), 0);
+            renderer.displayInfoHUD(focusedObject);
+        }
     }
 
     @Override
@@ -108,7 +118,6 @@ public class GameCamera extends InputAdapter {
 
     @Override
     public boolean scrolled(float amountX, float amountY) {
-        focusedObject = null;
         float zoomScale = amountY > 0 ? 1.1f : 0.9f;
         zoom(zoomScale);
         return true;

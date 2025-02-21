@@ -40,7 +40,6 @@ public class SolarSystem {
     }
 
     public void updateSystem(double dt) {
-        star.updatePosition(dt);
         for (OrbitalObject orb : star.getAllOrbitingObjects()) {
             orb.updatePosition(dt);
         }

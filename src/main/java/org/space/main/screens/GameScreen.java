@@ -29,8 +29,8 @@ public class GameScreen implements Screen {
 
     public GameScreen(Space space) {
         this.space = space;
-
-        gameCamera = new GameCamera(1280,720);
+        gui = new GUIRenderer();
+        gameCamera = new GameCamera(1280,720, gui);
         this.camera = gameCamera.getCamera();
 
         camera.zoom = savedZoom;
@@ -42,7 +42,6 @@ public class GameScreen implements Screen {
         ssr = new SolarSystemRenderer(solarSystem);
         gameCamera.addSolarSystem(solarSystem);
 
-        gui = new GUIRenderer(space, solarSystem);
 
         multiplexer = new InputMultiplexer();
         multiplexer.addProcessor(gui.getStage()); // UI Input
