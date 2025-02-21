@@ -8,9 +8,6 @@ public class Launcher {
 
     public static void main(String[] args) {
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-        // Get display resolution for full-screen mode
-//        Graphics.DisplayMode displayMode = Lwjgl3ApplicationConfiguration.getDisplayMode();
-//        config.setFullscreenMode(displayMode); // Fullscreen by default
 
         config.setTitle("Space Explorer");
         config.setResizable(true);

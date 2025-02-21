@@ -32,6 +32,7 @@ public class GUIRenderer {
         table.top().left();
         // UI Elements
         selectBox.setItems(getStringsForDropdown("[PLANETS]"));
+        selectBox.scaleBy(0.5f);
 
         table.setPosition(0, stage.getHeight() - table.getHeight());
         table.row();

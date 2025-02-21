@@ -16,18 +16,21 @@ public class GameCamera extends InputAdapter {
     private OrthographicCamera camera;
     private Vector3 lastTouch = new Vector3();
     private List<OrbitalObject> objects;
+    private OrbitalObject focusedObject;
 
     public GameCamera(float viewportWidth, float viewportHeight) {
         camera = new OrthographicCamera(viewportWidth, viewportHeight);
         camera.position.set(0, 0, 0);
         camera.update();
         objects = new ArrayList<>();
+        focusedObject = null;
     }
 
     public void addVisibleObject(OrbitalObject object) {
         objects.add(object);
     }
 
+    // Needs visible objects to interact with
     public void addSolarSystem(SolarSystem solarSystem) {
         objects.add(solarSystem.getStar());
         for (OrbitalObject object : solarSystem.getStar().getOrbitingObjects()) {
@@ -47,27 +50,30 @@ public class GameCamera extends InputAdapter {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+        focusedObject = null;
         lastTouch.set(screenX, screenY, 0);
 
         Vector3 worldCoords = camera.unproject(new Vector3(screenX, screenY, 0));
-        checkClick(worldCoords.x, worldCoords.y);
+        handleClick(worldCoords.x, worldCoords.y);
+
         return true;
     }
 
-    private void checkClick(float x, float y) {
+    private void handleClick(float x, float y) {
         if (objects == null || objects.isEmpty()) {
             System.out.println(this.getClass() + " - checkClick(): No objects in camera's selection array.");
             return;
         }
         for (OrbitalObject obj : objects) {
-            if (isClicked(obj, x, y)) {
+            if (isOrbitalObjectClicked(obj, x, y)) {
                 System.out.println("Clicked on: " + obj.getName());
+                setFocusedObject(obj);
                 break;
             }
         }
     }
 
-    private boolean isClicked(OrbitalObject obj, float x, float y) {
+    private boolean isOrbitalObjectClicked(OrbitalObject obj, float x, float y) {
         float objX = obj.getPosition().getX();
         float objY = obj.getPosition().getY();
         float radius = (float) obj.getSpriteRadius();
@@ -76,8 +82,19 @@ public class GameCamera extends InputAdapter {
         return distance <= radius;
     }
 
+    private void setFocusedObject(OrbitalObject orb) {
+        camera.zoom = (float) (0.01f * orb.getSpriteRadius());
+        camera.position.set(orb.getPosition().getX(), orb.getPosition().getY(), 0);
+        focusedObject = orb;
+    }
+
+    public void updateFocus() {
+        if (focusedObject != null) camera.position.set(focusedObject.getPosition().getX(), focusedObject.getPosition().getY(), 0);
+    }
+
     @Override
     public boolean touchDragged(int screenX, int screenY, int pointer) {
+        focusedObject = null;
         Vector3 newTouch = new Vector3(screenX, screenY, 0);
         camera.unproject(newTouch);
         Vector3 lastWorld = camera.unproject(lastTouch);
@@ -91,12 +108,14 @@ public class GameCamera extends InputAdapter {
 
     @Override
     public boolean scrolled(float amountX, float amountY) {
+        focusedObject = null;
         float zoomScale = amountY > 0 ? 1.1f : 0.9f;
         zoom(zoomScale);
         return true;
     }
 
     public void move(float dx, float dy) {
+        // Multiplying the camera's zoom level equalizes the panning distance across zoom levels.
         camera.position.add(dx * camera.zoom, dy * camera.zoom, 0);
         camera.update();
     }

@@ -77,6 +77,7 @@ public class GameScreen implements Screen {
         float dt = Gdx.graphics.getDeltaTime();
 
         // update camera transform for zoom/panning
+        gameCamera.updateFocus();
         camera.update();
 
         // update solar system

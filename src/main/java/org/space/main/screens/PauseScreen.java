@@ -22,6 +22,7 @@ public class PauseScreen implements Screen {
     public PauseScreen(Space game, GameScreen gameScreen) {
         this.space = game;
         this.gameScreen = gameScreen;
+        System.out.println("Made new pause screen");
 
         this.camera = new OrthographicCamera();
         viewport = new ExtendViewport(Space.SCREEN_WIDTH, Space.SCREEN_HEIGHT, camera);
